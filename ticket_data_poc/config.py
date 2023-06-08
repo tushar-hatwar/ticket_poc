@@ -4,17 +4,21 @@ from pyspark.sql.types import *
 
 # COMMAND ----------
 
+storage_account_name = "saticketpocdata08062023"
+
+# COMMAND ----------
+
 #Global Variables database names
 gv_bronze_db_name = "bronze_ticket_db"
 gv_silver_db_name = "silver_ticket_db"
 gv_gold_db_name = "gold_ticket_db"
-#Global Variables database location path
-gv_bronze_db_path = "/user/hive/warehouse/bronze_ticket_db"
-gv_silver_db_path = "/user/hive/warehouse/silver_ticket_db"
-gv_gold_db_path = "/user/hive/warehouse/gold_ticket_db"
+# Global Variables database location path
+gv_bronze_db_path = f"/mnt/{storage_account_name}/lake/delta/bronze_ticket_db"
+gv_silver_db_path = f"/mnt/{storage_account_name}/lake/delta/silver_ticket_db"
+gv_gold_db_path = f"/mnt/{storage_account_name}/lake/delta/gold_ticket_db"
 # Global Landing Variable Path
-gv_landing_path = "/mnt/landing/tickets/"
-gv_baddata_path = "/mnt/baddata/"
+gv_landing_path = f"/mnt/{storage_account_name}/lake/landing/tickets/"
+gv_baddata_path = f"/mnt/{storage_account_name}/lake/baddata/"
 
 # COMMAND ----------
 

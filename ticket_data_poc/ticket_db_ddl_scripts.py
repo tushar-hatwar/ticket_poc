@@ -464,3 +464,14 @@ create table if not exists {0}.sales_fact(
   updated_by varchar(50),
   updated_date timestamp
 )""".format(gv_gold_db_name))
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC show databases;
+
+# COMMAND ----------
+
+# %sql 
+# use bronze_ticket_db;
+# show tables;

@@ -10,18 +10,12 @@
 # MAGIC
 # MAGIC ###Details
 # MAGIC
-# MAGIC | Details | Information 
+# MAGIC | Details | Information
 # MAGIC |----|-----
-# MAGIC |Notebook Created By | Raveendra  
 # MAGIC |Object Name | Tickets  data Processing
 # MAGIC |File Type | delimited file (csv)
 # MAGIC |Target Location | Databricks Delta Tables 
 # MAGIC
-# MAGIC ###History
-# MAGIC |Date | Developed By | comments
-# MAGIC |----|-----|----
-# MAGIC |01/06/2022|Ravendra| Initial Version
-# MAGIC | Find more Videos | Youtube   | <a href="https://www.youtube.com/watch?v=FpxkiGPFyfM&list=PL50mYnndduIHRXI2G0yibvhd3Ck5lRuMn" target="_blank"> Youtube link </a>|
 
 # COMMAND ----------
 

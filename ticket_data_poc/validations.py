@@ -1,4 +1,8 @@
 # Databricks notebook source
+# MAGIC %run ./config
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC #### Varify records count after processing in bronze tables
 
@@ -47,17 +51,17 @@
 
 # COMMAND ----------
 
-df_bad_data = spark.read.json("/mnt/baddata/*/*/bad_records")
-display(df_bad_data)
+# df_bad_data = spark.read.json(f"{gv_baddata_path}bad_records")
+# display(df_bad_data)
 
 # COMMAND ----------
 
-display(df_bad_data.groupBy("path").count())
+# display(df_bad_data.groupBy("path").count())
 
 # COMMAND ----------
 
-display(df_bad_data.filter("path='dbfs:/mnt/landing/tickets/events/allevents_pipe.csv'"))
+# display(df_bad_data.filter("path='dbfs:/mnt/landing/tickets/events/allevents_pipe.csv'"))
 
 # COMMAND ----------
 
-display(df_bad_data.filter("path='dbfs:/mnt/landing/tickets/venue/venue_pipe.csv'"))
+# display(df_bad_data.filter("path='dbfs:/mnt/landing/tickets/venue/venue_pipe.csv'"))
