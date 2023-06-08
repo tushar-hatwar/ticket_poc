@@ -51,17 +51,21 @@
 
 # COMMAND ----------
 
-# df_bad_data = spark.read.json(f"{gv_baddata_path}bad_records")
-# display(df_bad_data)
+df_bad_data = spark.read.json(f"{gv_baddata_path}/*/*/bad_records")
+display(df_bad_data)
 
 # COMMAND ----------
 
-# display(df_bad_data.groupBy("path").count())
+display(df_bad_data.groupBy("path").count())
 
 # COMMAND ----------
 
-# display(df_bad_data.filter("path='dbfs:/mnt/landing/tickets/events/allevents_pipe.csv'"))
+display(df_bad_data.filter("path='dbfs:/mnt/saticketpocdata08062023/lake/landing/tickets/events/allevents_pipe.csv'"))
 
 # COMMAND ----------
 
-# display(df_bad_data.filter("path='dbfs:/mnt/landing/tickets/venue/venue_pipe.csv'"))
+display(df_bad_data.filter("path='dbfs:/mnt/saticketpocdata08062023/lake/landing/tickets/venue/venue_pipe.csv'"))
+
+# COMMAND ----------
+
+
